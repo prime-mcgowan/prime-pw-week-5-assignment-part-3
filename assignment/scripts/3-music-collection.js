@@ -250,6 +250,8 @@ function showCollection ([]) {
  console.log(total);
  */
 
+console.log('*****showCollection Function*****');
+
 function showCollection (collection) {
     for (let i=0; i<collection.length; i++)
     console.log(collection[i].title + ' by ' + collection[i].artist + ' published in ' + collection[i].yearPublished);
@@ -260,10 +262,33 @@ console.log('number of items in collection array:', showCollection (collection))
 console.log(collection);
 
 
+console.log('*****findByArtist Function*****');
+
+let artistResults = [];
+
+function findByArtist (artist) {
+   for(let i=0; i<collection.length; i++)
+   if(collection[i].artist === artist) {
+    artistResults.push(artist)
+   }  
+}
+
+
+console.log(findByArtist('Oh Wonder'));
+console.log(artistResults);
+
+
+console.log(findByArtist('Bastille'));
+console.log(artistResults);
+
+
+console.log(findByArtist('Beck'));
+
+console.log(findByArtist('Semisonic'));
+   
 
 
 
-//
 /*
 console.log('*****showCollection Function*****');
 
@@ -278,14 +303,6 @@ console.log(showCollection(collection));
 */
 
 /*
-
-collection = {
-    title: '',
-    artist: '',
-    yearPublished:[]
-}
-
-
 function showCollection (title, artist) {
     for (let i=0; i<collection.length; i++){
         console.log(collection[i]);
@@ -295,8 +312,9 @@ function showCollection (title, artist) {
 }
 
 console.log(showCollection( ));
+*/
 
-
+/*
 function showCollection (title, artist) {
     for(let i=0; i<collection.length; i++){
         console.log(collection[i]);
@@ -308,3 +326,5 @@ function showCollection (title, artist) {
 }
 console.log(showCollection(title,artist));
 */
+
+
