@@ -268,16 +268,27 @@ let artistResults = [];
 
 function findByArtist (artist) {
    for(let i=0; i<collection.length; i++)
-   if(collection[i].artist === artist) {
+   if( artist === collection[i].artist) {
     artistResults.push(artist)
-   }  
+    console.log(collection[i].title, collection[i].artist, collection[i].yearPublished)
+   }   
 }
 
 
 console.log(findByArtist('Oh Wonder'));
-console.log(artistResults);
+//console.log(artistResults);
+
+console.log(findByArtist('Beck'));
+
+console.log(findByArtist('Beatles'));
+console.log(artistResults)
+
+console.log(findByArtist('Bastille'));
 
 
+
+
+/*
 console.log(findByArtist('Bastille'));
 console.log(artistResults);
 
@@ -285,7 +296,7 @@ console.log(artistResults);
 console.log(findByArtist('Beck'));
 
 console.log(findByArtist('Semisonic'));
-   
+ */  
 
 
 
