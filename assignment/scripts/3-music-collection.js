@@ -54,7 +54,8 @@ function addToCollection (...a) {
 
 
 
-
+//Below is code I used to attempt to make addToCollection work.
+//I was on the right track but needed help to put it all together
 /*
 console.log('Adding first album:', addToCollection('Bad Blood', 'Bastille', 2013));
 
@@ -70,15 +71,6 @@ console.log('Adding sixth album:', addToCollection('Wild World', 'Bastille', 202
 
 console.log(collection);
 */
-
-
-
-
-
-
-
-
-
 
 /*
 function addToCollection (title, artist, yearPublished) {
@@ -205,21 +197,6 @@ function addToCollection (title, artist, yearPublished) {
     return true;
 }
 
-/*
-console.log('Adding first album:', addToCollection('Bad Blood', 'Bastille', 2013));
-
-console.log('Adding second album:', addToCollection('White Album', 'Beatles', 1968));
-
-console.log('Adding third album:', addToCollection('Country Grammar', 'Nelly', 2000));
-
-console.log('Adding fourth album:', addToCollection('Changes', 'Justin Bieber', 2020));
-
-console.log('Adding fifth album:', addToCollection('22 Make', 'Oh Wonder', 2022));
-
-console.log('Adding sixth album:', addToCollection('Wild World', 'Bastille', 2020));
-
-console.log(collection);
-*/
 
 
 /*
@@ -264,19 +241,28 @@ console.log(collection);
 
 console.log('*****findByArtist Function*****');
 
-let artistResults = [];
+
 
 function findByArtist (artist) {
+    let artistResults = [];
    for(let i=0; i<collection.length; i++)
    if( artist === collection[i].artist) {
     artistResults.push(artist)
-    console.log(collection[i].title, collection[i].artist, collection[i].yearPublished)
-   }   
+    console.log(collection[i].artist)   
+}
+return artistResults;
 }
 
+console.log(findByArtist('Beck'));
 
-console.log(findByArtist('Oh Wonder'));
-//console.log(artistResults);
+console.log(findByArtist('Nelly'));
+
+console.log(findByArtist('Bastille'));
+
+/*
+
+console.log(collection[i].title, collection[i].artist, collection[i].yearPublished)  
+console.log(collection[i].title, collection[i].artist, collection[i].yearPublished)  
 
 console.log(findByArtist('Beck'));
 
@@ -284,8 +270,7 @@ console.log(findByArtist('Beatles'));
 console.log(artistResults)
 
 console.log(findByArtist('Bastille'));
-
-
+*/
 
 
 /*
@@ -297,6 +282,22 @@ console.log(findByArtist('Beck'));
 
 console.log(findByArtist('Semisonic'));
  */  
+
+console.log('*****STRETCH GOALS*****');
+
+function search (artist, year) {
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
