@@ -56,17 +56,18 @@ function addToCollection (...a) {
 
 //Below is code I used to attempt to make addToCollection work.
 //I was on the right track but needed help to put it all together
+//Shong helped me with the (...) to push everything at once
+//There was some discussion after Wednesday's class about how to do this part...some ppl
+//did it like I was going to below but like I said, Shong showed my the (...) feature.
+
+
+
 /*
 console.log('Adding first album:', addToCollection('Bad Blood', 'Bastille', 2013));
-
 console.log('Adding second album:', addToCollection('White Album', 'Beatles', 1968));
-
 console.log('Adding third album:', addToCollection('Country Grammar', 'Nelly', 2000));
-
 console.log('Adding fourth album:', addToCollection('Changes', 'Justin Bieber', 2020));
-
 console.log('Adding fifth album:', addToCollection('22 Make', 'Oh Wonder', 2022));
-
 console.log('Adding sixth album:', addToCollection('Wild World', 'Bastille', 2020));
 
 console.log(collection);
@@ -142,10 +143,6 @@ function addToCollection (title, artist, yearPublished) {
 console.log(addToCollection());
 */
 
-
-
-
-
 /*
 function addToCollection (title, artist, yearPublished) {
     collection.title= 'Bad Blood';
@@ -156,11 +153,6 @@ function addToCollection (title, artist, yearPublished) {
 
 console.log('First album:', addToCollection('Bad Blood', 'Bastille', [2012]));
 console.log(collection);
-
-
-
-
-
 
 
 function addToCollection (title, artist, yearPublished) {
